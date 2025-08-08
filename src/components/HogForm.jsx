@@ -11,7 +11,7 @@ function HogForm({ onAddHog }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!name || !weight) return; 
+    if (!name || !weight) return;
 
     const newHog = {
       name,
@@ -24,7 +24,6 @@ function HogForm({ onAddHog }) {
 
     onAddHog(newHog);
 
-    // Reset form fields
     setName("");
     setWeight("");
     setSpecialty("");
@@ -35,6 +34,8 @@ function HogForm({ onAddHog }) {
 
   return (
     <form className="ui form" onSubmit={handleSubmit} style={{ marginBottom: "2rem" }}>
+      <h2>New Hog</h2>
+
       <div className="field">
         <label htmlFor="name">Name:</label>
         <input
@@ -109,4 +110,5 @@ function HogForm({ onAddHog }) {
 }
 
 export default HogForm;
+
 

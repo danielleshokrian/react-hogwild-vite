@@ -29,10 +29,9 @@ function App() {
   };
 
   const handleAddHog = (newHog) => {
-    // Assign a unique ID
     const newHogWithId = {
       ...newHog,
-      id: Date.now() + Math.random(), // simple unique ID
+      id: Date.now() + Math.random(), 
     };
     setHogs((prevHogs) => [...prevHogs, newHogWithId]);
   };

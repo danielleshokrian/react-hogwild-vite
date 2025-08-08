@@ -6,8 +6,8 @@ function HogCard({ hog, onHide }) {
   const handleToggleDetails = () => setShowDetails((show) => !show);
 
   return (
-    <div aria-label="hog card" className="ui eight wide column" style={{ marginBottom: "1rem" }}>
-      <div className="ui card">
+    <div aria-label="hog card" className="ui card" style={{ marginBottom: "1rem" }}>
+      <div className="card">
         <div
           className="image"
           onClick={handleToggleDetails}
